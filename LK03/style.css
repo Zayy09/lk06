@@ -81,15 +81,50 @@ form {
   width: 300px;
 }
 
+form input,
+form select,
+form textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  background-color: #f8fafc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #8ec5fc;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(142, 197, 252, 0.3);
+}
+
+form label {
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: -5px;
+}
+
 button {
-  padding: 15px;
+  padding: 12px;
+  margin-top: 10px;
   background: #2c3e50;
   color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 button:hover {
   background: #419ffd;
   cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(65, 159, 253, 0.3);
 }
 
 footer {
