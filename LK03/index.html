@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,122 +10,123 @@
 
 <body>
 
-<!-- HEADER -->
-<header>
-    <h1>Profil Mahasiswa</h1>
+    <!-- HEADER -->
+    <header>
+        <h1>Profil Mahasiswa</h1>
+        <hr>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <ul>
+            <li><a href="#foto">Foto Profil</a></li>
+            <li><a href="#tentang">Tentang Saya</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#hobi">Hobi</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="#daftar">Pendaftaran</a></li>
+        </ul>
+    </nav>
+
     <hr>
-</header>
 
-<!-- NAVIGATION MENU -->
-<nav>
-    <ul>
-        <li><a href="#foto">Foto Profil</a></li>
-        <li><a href="#tentang">Tentang Saya</a></li>
-        <li><a href="#skill">Skill</a></li>
-        <li><a href="#hobi">Hobi</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-        <li><a href="#daftar">Pendaftaran</a></li>
-    </ul>
-</nav>
+    <!-- MAIN CONTENT -->
+    <main>
 
-<hr>
+        <!-- FOTO PROFIL -->
+        <section id="foto">
+            <h3>Foto Profil</h3>
+            <img src="foto.jpg" alt="Foto Profil" width="120">
+        </section>
 
-<!-- MAIN CONTENT -->
-<main>
+        <!-- TENTANG SAYA -->
+        <section id="tentang">
+            <h3>Tentang Saya</h3>
+            <article>
+                <p>
+                    Halo, nama saya Zayyan Muhammad.
+                    Saya adalah mahasiswa yang sedang belajar web development.
+                </p>
+            </article>
+        </section>
 
-    <!-- FOTO PROFIL -->
-    <section id="foto">
-        <h3>Foto Profil</h3>
-        <img src="foto.jpg" alt="Foto Profil" width="120">
+        <!-- SKILL -->
+        <section id="skill">
+            <h3>Skill</h3>
+            <article>
+                <ul>
+                    <li>HTML dasar</li>
+                    <li>Microsoft Office</li>
+                    <li>Main Roamer</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- HOBI -->
+        <section id="hobi">
+            <h3>Hobi</h3>
+            <article>
+                <ol>
+                    <li>Berenang</li>
+                    <li>Bermain Game</li>
+                    <li>Bermain Bola</li>
+                </ol>
+            </article>
+        </section>
+
+        <!-- KONTAK -->
+        <section id="kontak">
+            <h3>Kontak</h3>
+            <article>
+                <p>Email : zay.muhammad09@gmail.com</p>
+                <p>Instagram : @zayy_muhammad_</p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- FORM PENDAFTARAN -->
+    <section id="daftar">
+        <h2>Form Pendaftaran</h2>
+
+        <form>
+
+            <label>Nama:</label><br>
+            <input type="text" name="nama" required>
+            <br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" required>
+            <br><br>
+
+            <label>Nomor HP:</label><br>
+            <input type="tel" name="hp" pattern="[0-9]{10,13}" required>
+            <br><br>
+
+            <label>Kategori:</label><br>
+            <select name="kategori" required>
+                <option value="">-- Pilih Kategori --</option>
+                <option>Pelajar</option>
+                <option>Mahasiswa</option>
+                <option>Umum</option>
+            </select>
+            <br><br>
+
+            <label>Pesan:</label><br>
+            <textarea name="pesan" rows="4" required></textarea>
+            <br><br>
+
+            <button type="submit">Kirim</button><br>
+
+        </form>
     </section>
 
-    <!-- TENTANG SAYA -->
-    <section id="tentang">
-        <h3>Tentang Saya</h3>
-        <article>
-            <p>
-                Halo, nama saya Zayyan Muhammad. 
-                Saya adalah mahasiswa yang sedang belajar web development.
-            </p>
-        </article>
-    </section>
-
-    <!-- SKILL -->
-    <section id="skill">
-        <h3>Skill</h3>
-        <article>
-            <ul>
-                <li>HTML dasar</li>
-                <li>Microsoft Office</li>
-                <li>Main Roamer</li>
-            </ul>
-        </article>
-    </section>
-
-    <!-- HOBI -->
-    <section id="hobi">
-        <h3>Hobi</h3>
-        <article>
-            <ol>
-                <li>Berenang</li>
-                <li>Bermain Game</li>
-                <li>Bermain Bola</li>
-            </ol>
-        </article>
-    </section>
-
-    <!-- KONTAK -->
-    <section id="kontak">
-        <h3>Kontak</h3>
-        <article>
-            <p>Email : zay.muhammad09@gmail.com</p>
-            <p>Instagram : @zayy_muhammad_</p>
-        </article>
-    </section>
-
-</main>
-
-<!-- FORM PENDAFTARAN -->
-<section id="daftar">
-    <h2>Form Pendaftaran</h2>
-
-    <form>
-
-        <label>Nama:</label><br>
-        <input type="text" name="nama" required>
-        <br><br>
-
-        <label>Email:</label><br>
-        <input type="email" name="email" required>
-        <br><br>
-
-        <label>Nomor HP:</label><br>
-        <input type="tel" name="hp" pattern="[0-9]{10,13}" required>
-        <br><br>
-
-        <label>Kategori:</label><br>
-        <select name="kategori" required>
-            <option value="">-- Pilih Kategori --</option>
-            <option>Pelajar</option>
-            <option>Mahasiswa</option>
-            <option>Umum</option>
-        </select>
-        <br><br>
-
-        <label>Pesan:</label><br>
-        <textarea name="pesan" rows="4" required></textarea>
-        <br><br>
-
-        <button type="submit">Kirim</button><br>
-
-    </form>
-</section>
-
-<!-- FOOTER -->
-<footer>
-    <hr>
-    <p>Copyright 2026</p>
-</footer>
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <p>Copyright 2026</p>
+    </footer>
 
 </body>
+
 </html>

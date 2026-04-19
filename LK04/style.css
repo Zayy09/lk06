@@ -183,3 +183,39 @@ footer {
     font-size: 14px;
   }
 }
+
+/* ================= */
+/* DARK MODE         */
+/* ================= */
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .navbar {
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-mode article, 
+body.dark-mode form {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode h2 {
+  color: #66b2ff;
+}
+
+body.dark-mode input, 
+body.dark-mode select, 
+body.dark-mode textarea {
+  background: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark-mode footer {
+  background: #000;
+}
