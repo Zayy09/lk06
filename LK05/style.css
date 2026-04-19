@@ -127,6 +127,11 @@ form label {
     font-size: 14px;
 }
 
+form label i {
+    margin-right: 6px;
+    color: #6366f1;
+}
+
 form input,
 form select,
 form textarea {
@@ -159,6 +164,10 @@ button {
 
 button:hover {
     background: #4f46e5;
+}
+
+button i {
+    margin-right: 5px;
 }
 
 /* HASIL */
@@ -358,6 +367,10 @@ html {
 }
 
 .dark-mode .sosmed-card i {
+    color: #a5b4fc;
+}
+
+.dark-mode form label i {
     color: #a5b4fc;
 }
 
